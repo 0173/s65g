@@ -14,6 +14,7 @@
 		291E4BD21D1F10DC0061B372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291E4BD11D1F10DC0061B372 /* Assets.xcassets */; };
 		291E4BD51D1F10DC0061B372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291E4BD31D1F10DC0061B372 /* LaunchScreen.storyboard */; };
 		291E4BDE1D20E3830061B372 /* Main.storyboard-backup1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291E4BDC1D20E3830061B372 /* Main.storyboard-backup1.storyboard */; };
+		29B326991D22057700EA541B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B326981D22057700EA541B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		291E4BD41D1F10DC0061B372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		291E4BD61D1F10DC0061B372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		291E4BDD1D20E3830061B372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Tabbed View Project/Base.lproj/Main.storyboard-backup1.storyboard"; sourceTree = "<group>"; };
+		29B326981D22057700EA541B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../lecture3a/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				291E4BCA1D1F10DC0061B372 /* FirstViewController.swift */,
 				291E4BCC1D1F10DC0061B372 /* SecondViewController.swift */,
 				291E4BCE1D1F10DC0061B372 /* Main.storyboard */,
+				29B326981D22057700EA541B /* Main.storyboard */,
 				291E4BD11D1F10DC0061B372 /* Assets.xcassets */,
 				291E4BD31D1F10DC0061B372 /* LaunchScreen.storyboard */,
 				291E4BD61D1F10DC0061B372 /* Info.plist */,
@@ -102,7 +105,6 @@
 				TargetAttributes = {
 					291E4BC41D1F10DC0061B372 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7A96FGCMSY;
 					};
 				};
 			};
@@ -130,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291E4BD51D1F10DC0061B372 /* LaunchScreen.storyboard in Resources */,
+				29B326991D22057700EA541B /* Main.storyboard in Resources */,
 				291E4BDE1D20E3830061B372 /* Main.storyboard-backup1.storyboard in Resources */,
 				291E4BD21D1F10DC0061B372 /* Assets.xcassets in Resources */,
 				291E4BD01D1F10DC0061B372 /* Main.storyboard in Resources */,
@@ -268,13 +271,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tabbed View Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ep.Tabbed-View-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -282,13 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tabbed View Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ep.Tabbed-View-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
