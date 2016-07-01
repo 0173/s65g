@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  Assignment2
 //
 //  Created by Elio Pajares on 6/29/16.
