@@ -96,6 +96,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-FR-Uv7">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.067755897689999997" green="0.80566917540000005" blue="0.39457450859999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Ul-jg-h8S">
                                 <rect key="frame" x="180" y="100" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.067755897689999997" green="0.80566917540000005" blue="0.39457450859999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -125,13 +129,9 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="kuU-2J-Nq8" kind="show" id="YCw-Gr-2bo"/>
+                                    <action selector="clickRunP2:" destination="kuU-2J-Nq8" eventType="touchUpInside" id="pef-GN-2wV"/>
                                 </connections>
                             </button>
-                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-FR-Uv7">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" red="0.067755897689999997" green="0.80566917540000005" blue="0.39457450859999998" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -156,6 +156,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textViewProb2" destination="8Ul-jg-h8S" id="8BH-A5-rlj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1w-vI-BxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,6 +176,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-bI-AoB">
+                                <rect key="frame" x="-20" y="0.0" width="640" height="600"/>
+                                <color key="backgroundColor" red="1" green="0.92512822809999995" blue="0.006895845185" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dVf-l3-l3v">
                                 <rect key="frame" x="180" y="100" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="0.92512822809999995" blue="0.006895845185" alpha="1" colorSpace="calibratedRGB"/>
@@ -201,11 +208,10 @@
                                         <exclude reference="MEi-h3-tBe"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="clickRunP3:" destination="vZV-UX-HnW" eventType="touchUpInside" id="6g9-Rb-oje"/>
+                                </connections>
                             </button>
-                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-bI-AoB">
-                                <rect key="frame" x="-20" y="0.0" width="640" height="600"/>
-                                <color key="backgroundColor" red="1" green="0.92512822809999995" blue="0.006895845185" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -228,6 +234,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textViewProb3" destination="dVf-l3-l3v" id="8gU-JJ-lnb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMh-jK-Iz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,6 +254,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v86-NH-5NT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MkO-qk-hDS">
                                 <rect key="frame" x="180" y="100" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="0.89235534399503968" blue="0.61707759629917969" alpha="1" colorSpace="calibratedRGB"/>
@@ -273,11 +286,10 @@
                                         <exclude reference="v54-Vk-L7y"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="clickRunP4:" destination="gyB-eF-edb" eventType="touchUpInside" id="bcW-cA-cZ1"/>
+                                </connections>
                             </button>
-                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v86-NH-5NT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -304,13 +316,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textViewProb4" destination="MkO-qk-hDS" id="sYE-mt-9fx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxO-DZ-mK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1629" y="443"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="zUf-59-yIj"/>
-    </inferredMetricsTieBreakers>
 </document>

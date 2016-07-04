@@ -9,7 +9,7 @@
 import UIKit
 
 class Problem2ViewController: UIViewController {
-
+   
     
     override func viewDidLoad() {
         
@@ -24,6 +24,13 @@ class Problem2ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var textViewProb2: UITextView!
+    @IBAction func clickRunP2(sender: UIButton) {
+        textViewProb2.text = "Clicked run prob 2"
+        //print("we were clicked again")
+        
+    }
+   
     
 
     /*

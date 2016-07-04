@@ -22,7 +22,12 @@ class Problem4ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var textViewProb4: UITextView!
     
+    @IBAction func clickRunP4(sender: UIButton) {
+        textViewProb4.text = "Clicked run prob 4"
+    }
+   
 
     /*
     // MARK: - Navigation

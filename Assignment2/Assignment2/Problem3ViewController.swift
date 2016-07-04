@@ -10,6 +10,8 @@ import UIKit
 
 class Problem3ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Problem 3"
@@ -17,10 +19,21 @@ class Problem3ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBOutlet weak var textViewProb3: UITextView!
+    
+    @IBAction func clickRunP3(sender: AnyObject) {
+        //print("we were clicked again")
+        textViewProb3.text = "Clicked run prob 3"
+
+        
     }
     
 
