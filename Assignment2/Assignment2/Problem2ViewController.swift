@@ -16,6 +16,9 @@ class Problem2ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Problem 2"
         // Do any additional setup after loading the view.
+        
+        let TwoDArray = TwoDimArrBool(height: 5, width: 5)
+        TwoDArray.printMyArrayBefore()
        
         
     }

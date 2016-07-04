@@ -12,6 +12,7 @@
 		297AA2821D244F1F004E0594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297AA2801D244F1F004E0594 /* Main.storyboard */; };
 		297AA2841D244F1F004E0594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297AA2831D244F1F004E0594 /* Assets.xcassets */; };
 		297AA2871D244F1F004E0594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297AA2851D244F1F004E0594 /* LaunchScreen.storyboard */; };
+		29960A1F1D2AB29C00B48965 /* TwoDimArrBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29960A1E1D2AB29C00B48965 /* TwoDimArrBool.swift */; };
 		29C3DF671D29B83D00162177 /* Problem2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3DF661D29B83D00162177 /* Problem2ViewController.swift */; };
 		29C3DF691D29B87C00162177 /* Problem3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3DF681D29B87C00162177 /* Problem3ViewController.swift */; };
 		29C3DF6B1D29B89400162177 /* Problem4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3DF6A1D29B89400162177 /* Problem4ViewController.swift */; };
@@ -25,6 +26,7 @@
 		297AA2831D244F1F004E0594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297AA2861D244F1F004E0594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297AA2881D244F1F004E0594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29960A1E1D2AB29C00B48965 /* TwoDimArrBool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoDimArrBool.swift; sourceTree = "<group>"; };
 		29C3DF661D29B83D00162177 /* Problem2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem2ViewController.swift; sourceTree = "<group>"; };
 		29C3DF681D29B87C00162177 /* Problem3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem3ViewController.swift; sourceTree = "<group>"; };
 		29C3DF6A1D29B89400162177 /* Problem4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem4ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				29C3DF661D29B83D00162177 /* Problem2ViewController.swift */,
 				29C3DF681D29B87C00162177 /* Problem3ViewController.swift */,
 				29C3DF6A1D29B89400162177 /* Problem4ViewController.swift */,
+				29960A1E1D2AB29C00B48965 /* TwoDimArrBool.swift */,
 				297AA2801D244F1F004E0594 /* Main.storyboard */,
 				297AA2831D244F1F004E0594 /* Assets.xcassets */,
 				297AA2851D244F1F004E0594 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				29C3DF6B1D29B89400162177 /* Problem4ViewController.swift in Sources */,
 				29C3DF691D29B87C00162177 /* Problem3ViewController.swift in Sources */,
 				29C3DF671D29B83D00162177 /* Problem2ViewController.swift in Sources */,
+				29960A1F1D2AB29C00B48965 /* TwoDimArrBool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
