@@ -108,8 +108,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-AQ-UpO">
-                                <rect key="frame" x="285" y="60" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-AQ-UpO">
+                                <rect key="frame" x="180" y="60" width="240" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60423062895741331" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="NHN-t8-zQW"/>
@@ -124,6 +124,9 @@
                                         <exclude reference="cur-zl-3Ab"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="kuU-2J-Nq8" kind="show" id="YCw-Gr-2bo"/>
+                                </connections>
                             </button>
                             <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-FR-Uv7">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
@@ -194,8 +197,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="MEi-h3-tBe"/>
                                         <exclude reference="KOT-LT-FyB"/>
+                                        <exclude reference="MEi-h3-tBe"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -307,4 +310,7 @@
             <point key="canvasLocation" x="1629" y="443"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zUf-59-yIj"/>
+    </inferredMetricsTieBreakers>
 </document>
