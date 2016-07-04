@@ -26,7 +26,7 @@ class MainController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.title = "test type"
+        
     }
 
     override func didReceiveMemoryWarning() {
