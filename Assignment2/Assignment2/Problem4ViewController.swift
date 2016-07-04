@@ -25,7 +25,7 @@ class Problem4ViewController: UIViewController {
     @IBOutlet weak var textViewProb4: UITextView!
     
     @IBAction func clickRunP4(sender: UIButton) {
-        textViewProb4.text = "Clicked run prob 4"
+        textViewProb4.text = "You clicked run problem 4"
     }
    
 

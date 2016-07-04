@@ -26,7 +26,7 @@ class Problem2ViewController: UIViewController {
     }
     @IBOutlet weak var textViewProb2: UITextView!
     @IBAction func clickRunP2(sender: UIButton) {
-        textViewProb2.text = "Clicked run prob 2"
+        textViewProb2.text = "You clicked run problem 2"
         //print("we were clicked again")
         
     }

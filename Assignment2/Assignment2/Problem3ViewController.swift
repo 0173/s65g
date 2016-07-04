@@ -31,7 +31,7 @@ class Problem3ViewController: UIViewController {
     
     @IBAction func clickRunP3(sender: AnyObject) {
         //print("we were clicked again")
-        textViewProb3.text = "Clicked run prob 3"
+        textViewProb3.text = "You clicked run problem 3"
 
         
     }
