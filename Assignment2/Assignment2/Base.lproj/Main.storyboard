@@ -39,11 +39,12 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttProb2ActClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaW-1g-ZMb"/>
                                     <segue destination="kuU-2J-Nq8" kind="show" id="zUf-59-yIj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI1-RP-nRM">
-                                <rect key="frame" x="265" y="279" width="70" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI1-RP-nRM">
+                                <rect key="frame" x="264.5" y="279" width="71" height="30"/>
                                 <state key="normal" title="Problem 3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -52,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdL-dZ-nsJ">
-                                <rect key="frame" x="264.5" y="350" width="71" height="30"/>
+                                <rect key="frame" x="264" y="350" width="71" height="30"/>
                                 <state key="normal" title="Problem 4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -72,15 +73,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qy3-if-hfH"/>
+                    <connections>
+                        <outlet property="buttonToPloblem2" destination="8K0-G1-7aV" id="LqU-fl-TtE"/>
+                        <outlet property="buttonToProblem3" destination="YI1-RP-nRM" id="jNC-tW-25e"/>
+                        <outlet property="buttonToProblem4" destination="hdL-dZ-nsJ" id="Rj8-7i-e0N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="-367"/>
+            <point key="canvasLocation" x="705" y="-445"/>
         </scene>
         <!--Problem2ViewController-->
         <scene sceneID="nbE-Xw-Wj5">
             <objects>
-                <viewController id="kuU-2J-Nq8" userLabel="Problem2ViewController" sceneMemberID="viewController">
+                <viewController id="kuU-2J-Nq8" userLabel="Problem2ViewController" customClass="MainController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E9f-GM-hb8"/>
                         <viewControllerLayoutGuide type="bottom" id="V5v-Bt-ckq"/>
@@ -89,11 +95,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-FR-Uv7">
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-FR-Uv7">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Problem2ViewControler" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQl-LS-aPI">
-                                        <rect key="frame" x="33" y="49" width="175" height="30"/>
+                                        <rect key="frame" x="-6" y="49" width="175" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="97" id="Qk5-7D-xZu"/>
                                             <constraint firstAttribute="height" constant="30" id="ftT-T5-XyS"/>
@@ -110,6 +116,16 @@
                                     <constraint firstAttribute="width" constant="240" id="zjQ-Db-HXE"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqa-On-8pj">
+                                <rect key="frame" x="260" y="102" width="46" height="30"/>
+                                <state key="normal" title="Run"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="prob2-action" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fBW-46-4bX">
+                                <rect key="frame" x="151" y="140" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -125,12 +141,12 @@
         <!--Problem3ViewController-->
         <scene sceneID="NSs-Is-BZA">
             <objects>
-                <viewController id="vZV-UX-HnW" userLabel="Problem3ViewController" sceneMemberID="viewController">
+                <viewController id="vZV-UX-HnW" userLabel="Problem3ViewController" customClass="MainController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7K1-Jz-6bo"/>
                         <viewControllerLayoutGuide type="bottom" id="ZOR-la-49w"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gw6-wb-Zdv">
+                    <view key="view" alpha="0.10000000000000001" contentMode="scaleToFill" id="gw6-wb-Zdv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -156,7 +172,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.92512822812692241" blue="0.0068958451850725799" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RzU-EX-d5N" firstAttribute="centerY" secondItem="gw6-wb-Zdv" secondAttribute="centerY" id="9QL-X2-hsl"/>
                             <constraint firstItem="RzU-EX-d5N" firstAttribute="centerX" secondItem="gw6-wb-Zdv" secondAttribute="centerX" id="yYJ-oo-OAe"/>
@@ -170,12 +186,12 @@
         <!--Problem4ViewController-->
         <scene sceneID="71W-hu-bfG">
             <objects>
-                <viewController id="gyB-eF-edb" userLabel="Problem4ViewController" sceneMemberID="viewController">
+                <viewController id="gyB-eF-edb" userLabel="Problem4ViewController" customClass="MainController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhc-AF-JAa"/>
                         <viewControllerLayoutGuide type="bottom" id="9T1-gg-7aa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bPE-PT-FqU">
+                    <view key="view" alpha="0.10000000000000001" contentMode="scaleToFill" id="bPE-PT-FqU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -201,7 +217,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DZD-ba-Vyf" firstAttribute="centerX" secondItem="bPE-PT-FqU" secondAttribute="centerX" id="1Tn-wd-EMh"/>
                             <constraint firstItem="DZD-ba-Vyf" firstAttribute="centerY" secondItem="bPE-PT-FqU" secondAttribute="centerY" id="ozP-cd-gxu"/>
