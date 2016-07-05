@@ -15,7 +15,46 @@ class Engine {
       var twoDimArrOfBoolAfter : Array<Array<Bool>>;
        twoDimArrOfBoolAfter = Array(count: height, repeatedValue: Array(count: width, repeatedValue: false))
     
+        for( var i = 0; i < array.count; i += 1 ) {
+            // for i in 0..<array.count {
+            
+            let width :Int = array.count;
+            
+            for( var j = 0; j < array[i].count; j += 1 ) {
+                //    for j in 0..<array[i].count {
+                
+                let height :Int = array[i].count;
+                
+                let livingNeighborsCount : Int = countLivingNeighbors( array, i: i, j: j, width: width, height: height);
+                
+                //twoDimArrOfBoolAfterprint(livingNeighborsCount);
+                
+                if( livingNeighborsCount < 2 ) {
+                    twoDimArrOfBoolAfter[i][j] = false;
+                }
+                else if( livingNeighborsCount == 2 || livingNeighborsCount == 3 ) {
+                    twoDimArrOfBoolAfter[i][j] = true;
+                }
+                else if( livingNeighborsCount > 3 ) {
+                    twoDimArrOfBoolAfter[i][j] = false;
+                }
+                
+                // special rule, dead cell become live cell
+                if( array[i][j] != true && livingNeighborsCount == 3 ) {
+                    twoDimArrOfBoolAfter[i][j] = true;
+                }
+            }
+            
+        }
     }
+    func countLivingNeighbors(array : Array<Array<Bool>>, i :Int, j :Int, width :Int, height :Int) -> Int {
+        var count : Int = 0;
+        
+        var x : Int;
+        var y : Int;
+    }
+    
+    
 
 
 }
