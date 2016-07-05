@@ -109,10 +109,8 @@ class TwoDimArrBool {
         
         print("in conwayGameStart");
         
-        //for( var i = 0; i < twoDimArrOfBool.count; i += 1 ) {
         for i in 0..<twoDimArrOfBool.count {
             
-            //for( var j = 0; j < twoDimArrOfBool[i].count; j += 1 ) {
             for j in 0..<twoDimArrOfBool[i].count {
                 
                 let livingNeighborsCount : Int = countLivingNeighbors( i, j: j);
@@ -138,7 +136,7 @@ class TwoDimArrBool {
         }
         
     }
-    
+    // swicht statement never run always getting multiple errors
     func countLivingNeighbors(i :Int, j :Int) -> Int {
         var count : Int = 0;
         
