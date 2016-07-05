@@ -168,12 +168,14 @@ class TwoDimArrBool {
         if( twoDimArrOfBool[x][y] == 1 ){ count += 1; }
         
         x = checkX(i + 1);
-        y = checkY(j);
+        y = checkY(j + 1);
         if( twoDimArrOfBool[x][y] == 1 ){ count += 1; }
         
         x = checkX(i + 1);
-        y = checkY(j + 1);
+        y = checkY(j);
         if( twoDimArrOfBool[x][y] == 1 ){ count += 1; }
+        
+       
         
         return count;
     }
