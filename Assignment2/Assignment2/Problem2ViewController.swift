@@ -6,33 +6,47 @@
 //  Copyright © 2016 Elio Pajares. All rights reserved.
 //
 
+
 import UIKit
 
 class Problem2ViewController: UIViewController {
-   
+    
+    
+    var twoDArrays : TwoDimArrBool = TwoDimArrBool(height: 5, width: 5);
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         self.title = "Problem 2"
         // Do any additional setup after loading the view.
-        
-        let TwoDArray = TwoDimArrBool(height: 5, width: 5)
-        TwoDArray.printMyArrayBefore()
-       
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBOutlet weak var textViewProb2: UITextView!
+    
     @IBAction func clickRunP2(sender: UIButton) {
-        textViewProb2.text = "You clicked run problem 2"
+        
+        twoDArrays.printMyArrayBefore();
+        
+        let countBefore = twoDArrays.countBeforeArray();
+        
+        twoDArrays.conwayGameStart();
+        
+        let countAfter = twoDArrays.countAfterArray();
+        
+        twoDArrays.printMyArrayAfter();
+        
+        textViewProb2.text = "'You clicked run problem 2.''The count before=\(countBefore), count after=\(countAfter)'";
         //print("we were clicked again")
         
     }
+    
+
    
     
 
