@@ -50,13 +50,51 @@ class Engine {
     func countLivingNeighbors(array : Array<Array<Bool>>, i :Int, j :Int, width :Int, height :Int) -> Int {
         var count : Int = 0;
         
-        var x : Int;
-        var y : Int;
+        var x : Int
+        var y : Int
+    
+        x = checkBoundry(i - 1, bounds: width);
+        y = checkBoundry(j - 1, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i - 1, bounds: width);
+        y = checkBoundry(j, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i - 1, bounds: width);
+        y = checkBoundry(j + 1, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i, bounds: width);
+        y = checkBoundry(j - 1, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i, bounds: width);
+        y = checkBoundry(j + 1, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i + 1, bounds: width);
+        y = checkBoundry(j - 1, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i + 1, bounds: width);
+        y = checkBoundry(j, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        x = checkBoundry(i + 1, bounds: width);
+        y = checkBoundry(j + 1, bounds: height);
+        if( array[x][y] == true ){ count += 1; }
+        
+        return count;
     }
     
+    func checkBoundry( v :Int, bounds :Int ) -> Int {
+        if( v < 0 ){ return (bounds-1); }
+        else if( v == bounds ){ return 0; }
+        else{ return v; }
+    }
     
-
-
 }
+
 
 

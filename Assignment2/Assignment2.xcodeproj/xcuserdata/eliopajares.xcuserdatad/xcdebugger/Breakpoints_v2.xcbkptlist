@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Assignment2/TwoDimArrBool.swift"
-            timestampString = "489445690.484897"
+            timestampString = "489448058.682271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "conwayGameStart()"
             landmarkType = "5">
          </BreakpointContent>
