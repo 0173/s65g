@@ -9,6 +9,11 @@
 import Foundation
 
 class Engine {
+    
+    func step( array : Array<Array<Bool>>, height: Int, width: Int ) {
+    
+    
+    }
 
 
 }
