@@ -11,17 +11,19 @@ import Foundation
 class Engine {
     
     func step( array : Array<Array<Bool>>, height: Int, width: Int ) {
+        
       print("in step method")
+        
       var twoDimArrOfBoolAfter : Array<Array<Bool>>;
        twoDimArrOfBoolAfter = Array(count: height, repeatedValue: Array(count: width, repeatedValue: false))
     
-        for( var i = 0; i < array.count; i += 1 ) {
-            // for i in 0..<array.count {
+        
+      for i in 0..<array.count {
             
             let width :Int = array.count;
             
-            for( var j = 0; j < array[i].count; j += 1 ) {
-                //    for j in 0..<array[i].count {
+           
+            for j in 0..<array[i].count {
                 
                 let height :Int = array[i].count;
                 

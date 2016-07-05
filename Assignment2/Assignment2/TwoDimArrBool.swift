@@ -136,7 +136,7 @@ class TwoDimArrBool {
         }
         
     }
-    // swicht statement never run always getting multiple errors
+    
     func countLivingNeighbors(i :Int, j :Int) -> Int {
         var count : Int = 0;
         
